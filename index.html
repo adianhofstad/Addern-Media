@@ -23,11 +23,15 @@
         <li><a href="#okonomi">Økonomi</a></li>
         <li><a href="#team">Team</a></li>
       </ul>
-      <button class="hamburger" aria-label="Meny">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-right">
+        <span class="nav-live">Direkte</span>
+        <span class="nav-clock" id="nav-clock"></span>
+        <button class="hamburger" aria-label="Meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -35,38 +39,32 @@
   <div class="ticker-bar">
     <span class="ticker-label">SISTE NYTT</span>
     <div class="ticker-track">
-      <span>Aksjeakademiet passerer 100 000 brukere — historisk milepæl for plattformen</span>
-      <span>Fagermoen Express åpner ny direkterute til Singapore</span>
-      <span>Kronstad Jewelry avduker 847-karats diamant verdt 2,3 milliarder</span>
-      <span>Minh Kampsport-utøver tar gull i nordisk mesterskap</span>
-      <span>SH Sparebank fjerner alle gebyrer for kunder under 25</span>
-      <span>Tavares Industries signerer NATO-kontrakt verdt 200 millioner euro</span>
+      <span>Tavares Industries finansierer USA-Israel-operasjon mot Iran</span>
+      <span>Luke blir Russlands nye president</span>
+      <span>Aksjeakademiet passerer 100 000 brukere</span>
+      <span>Fagermoen Express åpner rute til Asia</span>
+      <span>Kronstad Jewelry avduker verdens største diamant</span>
+      <span>Minh vinner nordisk mesterskap i kampsport</span>
+      <span>SH Sparebank fjerner gebyr for alle under 25</span>
+      <span>Tavares Industries lander NATO-kontrakt</span>
+      <span>Clavicular frame mogged av ASU-fratleder</span>
       <!-- Duplicate for seamless loop -->
-      <span>Aksjeakademiet passerer 100 000 brukere — historisk milepæl for plattformen</span>
-      <span>Fagermoen Express åpner ny direkterute til Singapore</span>
-      <span>Kronstad Jewelry avduker 847-karats diamant verdt 2,3 milliarder</span>
-      <span>Minh Kampsport-utøver tar gull i nordisk mesterskap</span>
-      <span>SH Sparebank fjerner alle gebyrer for kunder under 25</span>
-      <span>Tavares Industries signerer NATO-kontrakt verdt 200 millioner euro</span>
+      <span>Tavares Industries finansierer USA-Israel-operasjon mot Iran</span>
+      <span>Luke blir Russlands nye president</span>
+      <span>Aksjeakademiet passerer 100 000 brukere</span>
+      <span>Fagermoen Express åpner rute til Asia</span>
+      <span>Kronstad Jewelry avduker verdens største diamant</span>
+      <span>Minh vinner nordisk mesterskap i kampsport</span>
+      <span>SH Sparebank fjerner gebyr for alle under 25</span>
+      <span>Tavares Industries lander NATO-kontrakt</span>
+      <span>Clavicular frame mogged av ASU-fratleder</span>
     </div>
   </div>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-card">
-      <div class="hero-image"></div>
-      <div class="hero-content">
-        <div class="badge">SISTE NYTT</div>
-        <h1>Aksjeakademiet passerer 100 000 brukere — «Helt vilt»</h1>
-        <p class="ingress">Den populære plattformen for aksjehandel har nådd en historisk milepæl. Grunnleggerne beskriver veksten som enestående i norsk edtech-historie.</p>
-        <div class="hero-meta">
-          <span>20. mars 2026</span>
-          <span class="dot"></span>
-          <span>Addern Media</span>
-          <span class="dot"></span>
-          <span>3 min lesning</span>
-        </div>
-      </div>
+    <div class="hero-grid" id="hero-grid">
+      <!-- Rendered by JS -->
     </div>
   </section>
 
@@ -120,11 +118,7 @@
     </div>
   </footer>
 
-  <!-- ARTICLE MODAL -->
-  <div class="modal-overlay" id="modal-overlay">
-    <div class="modal"></div>
-  </div>
-
+  <script src="js/articles-data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
