@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'linear-gradient(135deg, #003049, #669bbc)',
     'linear-gradient(135deg, #d4a373, #bc6c25)',
     'linear-gradient(135deg, #1a1a2e, #4a1942)',
-    'linear-gradient(135deg, #1b3a2d, #2d5a3f)'
+    'linear-gradient(135deg, #1b3a2d, #2d5a3f)',
+    'linear-gradient(135deg, #2d6a4f, #1b4332)'
   ];
 
   heroEl.style.background = gradients[cardIndex % gradients.length];
@@ -64,7 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const relatedGrid = document.getElementById('related-grid');
   relatedGrid.innerHTML = related.map((a, i) => `
     <a href="artikkel.html?id=${a.id}" class="news-card fade-in" style="transition-delay: ${i * 0.1}s">
-      <div class="news-card-image" style="background: ${a.image ? `url('${a.image}') center/100% 100% no-repeat` : gradients[(a.id - 1) % gradients.length]}">
+      <div class="news-card-image ${a.portrait ? 'portrait-img' : ''}" style="background: ${a.image && a.portrait ? `url('${a.image}') center/cover` : a.image ? `url('${a.image}') center/cover no-repeat` : gradients[(a.id - 1) % gradients.length]}">
+        ${a.image ? `<img src="${a.image}" alt="${a.title}">` : ''}
         <span class="category-badge">${a.category}</span>
       </div>
       <div class="news-card-body">

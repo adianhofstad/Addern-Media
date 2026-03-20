@@ -22,7 +22,8 @@ const gradients = [
   'linear-gradient(135deg, #003049, #669bbc)',
   'linear-gradient(135deg, #d4a373, #bc6c25)',
   'linear-gradient(135deg, #1a1a2e, #4a1942)',
-  'linear-gradient(135deg, #1b3a2d, #2d5a3f)'
+  'linear-gradient(135deg, #1b3a2d, #2d5a3f)',
+  'linear-gradient(135deg, #2d6a4f, #1b4332)'
 ];
 
 // ===== DOM READY =====
@@ -33,7 +34,30 @@ document.addEventListener('DOMContentLoaded', () => {
   initHamburger();
   initScrollAnimations();
   initClock();
+  initPreloader();
+  initScrollProgress();
 });
+
+// ===== PRELOADER =====
+function initPreloader() {
+  const preloader = document.getElementById('preloader');
+  if (!preloader) return;
+  setTimeout(() => {
+    preloader.classList.add('hidden');
+  }, 1100);
+}
+
+// ===== SCROLL PROGRESS =====
+function initScrollProgress() {
+  const bar = document.getElementById('scroll-progress');
+  if (!bar) return;
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = progress + '%';
+  }, { passive: true });
+}
 
 // ===== LIVE CLOCK =====
 function initClock() {
@@ -110,7 +134,7 @@ function renderNewsCards() {
 
   grid.innerHTML = remaining.map((a, i) => `
     <a href="artikkel.html?id=${a.id}" class="news-card fade-in" style="transition-delay: ${i * 0.06}s">
-      <div class="news-card-image" style="background: ${gradients[(a.id - 1) % gradients.length]}">
+      <div class="news-card-image ${a.portrait ? 'portrait-img' : ''}" style="background: ${a.image && a.portrait ? `url('${a.image}') center/cover` : gradients[(a.id - 1) % gradients.length]}">
         ${a.image ? `<img src="${a.image}" alt="${a.title}">` : ''}
         <span class="category-badge">${a.category}</span>
       </div>

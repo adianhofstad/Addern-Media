@@ -23,9 +23,33 @@ Tavares Industries har allerede begynt å skalere opp produksjonen ved sine fabr
 Den norske regjeringen har godkjent eksporten etter en vurdering av Utenriksdepartementet. Forsvarsministeren kalte avtalen "et bevis på at norsk forsvarsindustri spiller en stadig viktigere rolle på den internasjonale arenaen."`
   },
   {
+    id: 12,
+    category: 'Sport',
+    image: 'images/adian-vm.png',
+    portrait: true,
+    title: 'Adian dropper VM: «Har andre planer»',
+    excerpt: 'Norges største fotballtalent velger bort VM-troppen og sjokkerer en hel nasjon.',
+    date: '20. mars 2026',
+    author: 'Addern Media',
+    body: `Adian Hofstad, Norges mest ettertraktede fotballspiller, har takket nei til plass i VM-troppen. Beslutningen har sendt sjokkbølger gjennom norsk fotball.
+
+"Jeg har andre planer," sa Hofstad kort i en pressemelding sendt ut via sin agent torsdag morgen. Ingen ytterligere detaljer ble gitt, noe som har ført til vill spekulasjon i mediene.
+
+Landslagstrener har uttalt seg om avgjørelsen og kalte den "ekstremt skuffende." Hofstad ble regnet som lagets viktigste spiller og nøkkelen til Norges sjanser i turneringen.
+
+Kilder tett på spilleren hevder at Hofstad ønsker å fokusere på sine forretningsinteresser, inkludert Addern Investing, som har vokst kraftig det siste året. Andre spekulerer i at han forbereder en overgang til en av Europas største klubber.
+
+"Adian er en spiller som tenker annerledes. Han har alltid hatt en plan, og den planen går tydeligvis utover fotballen," sa en tidligere lagkamerat til Addern Media.
+
+Norges Fotballforbund har bekreftet at de har mottatt Hofstads avslag og respekterer beslutningen, men innrømmer at det er et stort tap for laget. Erstatteren er foreløpig ikke offentliggjort.
+
+Fans har reagert med alt fra sinne til forståelse på sosiale medier. Hashtaggen #AdianBlirHjemme trendet på nummer én i Norge torsdag ettermiddag.`
+  },
+  {
     id: 10,
     category: 'Politikk',
     image: 'images/luke-president.png',
+    portrait: true,
     headerImage: 'images/luke-podium.png',
     title: 'Luke blir Russlands nye president',
     excerpt: 'Den karismatiske lederen har blitt innsatt som Russlands nye president i en overraskende maktoverføring.',
