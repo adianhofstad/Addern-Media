@@ -76,9 +76,9 @@ function renderHeroGrid() {
   const grid = document.getElementById('hero-grid');
   if (!grid) return;
 
-  // Main hero = Tavares/Yure, side heroes = Adian VM + Yasir
-  const main = articles.find(a => a.id === 11);  // Tavares Industries
-  const side1 = articles.find(a => a.id === 12); // Adian dropper VM
+  // Main hero = Adian VM, side heroes = Tavares/Yure + Yasir
+  const main = articles.find(a => a.id === 12);  // Adian dropper VM
+  const side1 = articles.find(a => a.id === 11); // Tavares Industries
   const side2 = articles.find(a => a.id === 13); // Yasir jaget
 
   function heroImageStyle(a, idx) {
