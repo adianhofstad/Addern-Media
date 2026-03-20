@@ -1,6 +1,35 @@
 // Shared articles data used by both index and article pages
 const articles = [
   {
+    id: 13,
+    category: 'Samfunn',
+    image: 'images/yasir-jaget.png',
+    portrait: true,
+    title: 'Yasir kan ikke forlate huset: Jenter jager ham i gatene',
+    excerpt: 'Ung mann lever i konstant fare etter at hundrevis av jenter begynte å forfølge ham overalt. Politiet har satt inn livvakter.',
+    date: '20. mars 2026',
+    author: 'Addern Media',
+    body: `Det som startet som uskyldig oppmerksomhet har utviklet seg til en fullskala sikkerhetskrise. Yasir, en ung mann fra Oslo, kan knapt forlate hjemmet sitt uten å bli omringet av hundrevis av jenter som desperat forsøker å få kontakt med ham.
+
+Situasjonen har blitt så alvorlig at politiet nå har tildelt Yasir et eget sikkerhetsteam bestående av fire livvakter som følger ham døgnet rundt. Ved flere anledninger har folkemengder på opptil 300 jenter blokkert hele gater i Oslo sentrum i håp om å få et glimt av ham.
+
+"Jeg kan ikke gå på butikken engang. Forrige uke prøvde jeg å kjøpe melk, og det endte med at politiet måtte stenge ned hele Karl Johan," forteller en tydelig frustrert Yasir til Addern Media.
+
+Hashtaggen #RunYasirRun har trendet på nummer én i Norge de siste to ukene, og har nå over 4,2 millioner innlegg på TikTok alene. Fans har opprettet dedikerte kontoer som sporer bevegelsene hans i sanntid, noe som har gjort situasjonen enda vanskeligere.
+
+Yasirs nabolag har måttet innføre ekstra sikkerhetstiltak etter at fans gjentatte ganger har forsøkt å klatre over gjerder og inn gjennom vinduer for å komme nær ham. En nabo forteller at det til enhver tid står mellom 50 og 100 jenter utenfor bygningen hans.
+
+"Vi har aldri sett noe lignende i Norge. Dette er på nivå med Beatlemania," sier politiets operasjonsleder, som har måttet omdisponere ressurser fra andre avdelinger for å håndtere situasjonen.
+
+Sosiale medier koker. Hashtaggen #YasirEffect har skapt en hel subkultur, der fans deler "Yasir-sightings" og rangerer de mest dramatiske jaktscenene. En video av Yasir som flykter fra en gruppe jenter gjennom Grünerløkka har alene fått 28 millioner visninger på Instagram.
+
+Psykologer er bekymret for Yasirs mentale helse. "Å leve i konstant flukt fra folkemengder er ekstremt belastende. Dette er ikke normalt, og det er ikke bærekraftig," advarer professor i psykologi ved Universitetet i Oslo.
+
+Myndighetene vurderer nå å innføre en egen "sikkerhetssone" rundt Yasirs bolig, og det diskuteres om han bør få tilgang til hemmelig adresse — et tiltak som normalt er forbeholdt trusselutsatte politikere og vitner i straffesaker.
+
+Yasir selv tar situasjonen med en blanding av humor og desperasjon: "Jeg er flattered, men jeg vil bare leve et normalt liv. Kan noen please fortelle dem at jeg bare er en vanlig fyr?"`
+  },
+  {
     id: 11,
     category: 'Politikk',
     image: 'images/tavares-yure.png',

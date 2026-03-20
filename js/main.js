@@ -76,10 +76,10 @@ function renderHeroGrid() {
   const grid = document.getElementById('hero-grid');
   if (!grid) return;
 
-  // Main hero = Luke (breaking), side heroes = other recent stories
-  const main = articles[0]; // Luke article (id 10)
-  const side1 = articles[1]; // Aksjeakademiet
-  const side2 = articles[2]; // Minh kampsport
+  // Main hero = Tavares/Yure, side heroes = Adian VM + Yasir
+  const main = articles.find(a => a.id === 11);  // Tavares Industries
+  const side1 = articles.find(a => a.id === 12); // Adian dropper VM
+  const side2 = articles.find(a => a.id === 13); // Yasir jaget
 
   function heroImageStyle(a, idx) {
     if (a.image) return `background: url('${a.image}') center/100% 100% no-repeat`;
