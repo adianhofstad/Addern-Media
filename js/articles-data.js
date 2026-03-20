@@ -1,6 +1,40 @@
 // Shared articles data used by both index and article pages
 const articles = [
   {
+    id: 14,
+    category: 'Vitenskap',
+    image: 'images/keba-cancer.png',
+    title: 'Keba Fall har kurert kreft: «Jeg ga aldri opp»',
+    excerpt: 'I et historisk gjennombrudd har den unge forskeren Keba Fall funnet en kur mot kreft. Verden jubler.',
+    date: '21. mars 2026',
+    author: 'Addern Media',
+    body: `I det som allerede kalles det viktigste medisinske gjennombruddet i menneskehetens historie, har den norske forskeren Keba Fall utviklet en fullstendig kur mot kreft. Nyheten ble kunngjort på en ekstraordinær pressekonferanse ved Universitetet i Oslo i dag, der Keba presenterte resultatene av årevis med intens forskning.
+
+"Jeg har jobbet med dette hver eneste dag de siste årene. Det har vært netter uten søvn, eksperimenter som har feilet hundrevis av ganger, og øyeblikk der jeg nesten ga opp. Men jeg visste at svaret fantes der ute," sa en tydelig rørt Keba foran hundrevis av journalister og forskere fra hele verden.
+
+Behandlingen, som Keba har kalt "Project Hope", er basert på en revolusjonerende metode som reprogrammerer kroppens egne immunceller til å gjenkjenne og ødelegge alle former for kreftceller. I motsetning til tradisjonell kjemoterapi har behandlingen ingen bivirkninger og virker på tvers av alle krefttyper.
+
+De kliniske forsøkene har gitt resultater som forskerverdenen kaller "umulige." Av 2 000 pasienter med ulike former for kreft i stadium 3 og 4, ble samtlige helt friske etter behandling. Tilbakefallsraten er null prosent — et tall som aldri har blitt sett i medisinsk historie.
+
+Nobelpriskomitéen har allerede kunngjort at Keba vil motta Nobelprisen i medisin for 2026 — den yngste vinneren noensinne. "Det finnes ingen tvil. Dette er den mest betydningsfulle medisinske oppdagelsen siden penicillin," uttalte komitéens leder.
+
+Verdens helseorganisasjon (WHO) har erklært dagen som en "global merkedag for menneskeheten." Generalsekretæren uttalte at Kebas forskning vil redde anslagsvis 10 millioner liv årlig — det tilsvarer hele Norges befolkning hvert halvår.
+
+Hashtaggen #KebaKurerKreft trendet som nummer én i 147 land, og sosiale medier eksploderte med takkemelinger, gråteemojier og hyllester. Verdensledere har stått i kø for å gratulere. USAs president kalte Keba "en gave til menneskeheten," mens Norges statsminister sa at "dette er den stolteste dagen i norsk historie."
+
+Kebas reise mot gjennombruddet har vært alt annet enn enkel. Han begynte forskningen som ung student, og ble gjentatte ganger avvist av etablerte forskningsinstitusjoner som kalte ideene hans "for ambisiøse" og "urealistiske." Men Keba nektet å gi opp.
+
+"Folk sa det var umulig. Professorer lo av meg. Søknadene mine om forskningsmidler ble avslått gang på gang. Men jeg hadde sett for mange mennesker lide. Jeg hadde sett familier miste sine kjæreste. Jeg kunne ikke bare akseptere at dette var skjebnen," fortalte Keba i et eksklusivt intervju med Addern Media.
+
+Gjennombruddet kom klokken 03:47 en tirsdag natt, da Keba satt alene i laboratoriet sitt. Resultatene fra det siste eksperimentet viste noe han aldri hadde sett før — kreftcellene ble fullstendig eliminert uten å skade friskt vev. Han ringte kollegaen sin med skjelvende hender.
+
+Farmasøytiske selskaper har allerede tilbudt Keba milliarder for rettighetene, men han har avslått samtlige. "Denne kuren tilhører menneskeheten, ikke et selskap. Den skal være gratis og tilgjengelig for alle — fra Oslo til de fattigste landsbyene i verden," sa Keba til stående ovasjoner under pressekonferansen.
+
+Produksjonen av behandlingen er allerede i gang ved laboratorier i Norge, og WHO planlegger global distribusjon innen utgangen av 2026. Keba leder selv arbeidet med å sikre at kuren når alle verdenshjørner.
+
+"Dette er ikke slutten. Dette er begynnelsen. Vi har vist at ingenting er umulig når man nekter å gi opp," avsluttet Keba, mens salen brøt ut i applaus som varte i over fem minutter.`
+  },
+  {
     id: 13,
     category: 'Samfunn',
     image: 'images/yasir-jaget.png',

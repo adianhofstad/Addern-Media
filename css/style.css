@@ -599,46 +599,36 @@ img {
 }
 
 .news-card-image {
-  height: 200px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 220px;
+  background: var(--near-black);
   position: relative;
   overflow: hidden;
 }
 
-.news-card:hover .news-card-image img,
-.news-card:hover .news-card-image::before {
-  transform: scale(1.06);
+.news-card:hover .news-card-image img {
+  transform: scale(1.04);
+}
+
+/* Blurred background layer using same image */
+.news-card-image::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.6);
+  z-index: 0;
+  transition: transform 0.5s ease;
 }
 
 .news-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  position: absolute;
-  inset: 0;
-  transition: transform 0.5s ease;
-}
-
-/* Portrait images: show full image with blurred background */
-.news-card-image.portrait-img {
-  background-size: cover !important;
-  background-position: center !important;
-  filter: none;
-}
-
-.news-card-image.portrait-img::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background: rgba(0,0,0,0.15);
-  z-index: 0;
-}
-
-.news-card-image.portrait-img img {
   object-fit: contain;
+  position: relative;
   z-index: 1;
+  transition: transform 0.5s ease;
 }
 
 .news-card-image .category-badge {

@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const relatedGrid = document.getElementById('related-grid');
   relatedGrid.innerHTML = related.map((a, i) => `
     <a href="artikkel.html?id=${a.id}" class="news-card fade-in" style="transition-delay: ${i * 0.1}s">
-      <div class="news-card-image ${a.portrait ? 'portrait-img' : ''}" style="background: ${a.image && a.portrait ? `url('${a.image}') center/cover` : a.image ? `url('${a.image}') center/cover no-repeat` : gradients[(a.id - 1) % gradients.length]}">
+      <div class="news-card-image" style="background-image: ${a.image ? `url('${a.image}')` : 'none'}; background-size: cover; background-position: center;">
         ${a.image ? `<img src="${a.image}" alt="${a.title}">` : ''}
         <span class="category-badge">${a.category}</span>
       </div>

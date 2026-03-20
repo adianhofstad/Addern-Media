@@ -128,13 +128,13 @@ function renderNewsCards() {
   const grid = document.getElementById('news-grid');
   if (!grid) return;
 
-  // Skip articles shown in hero
-  const heroIds = [articles[0].id, articles[1].id, articles[2].id];
+  // Skip articles shown in hero (match the IDs used in renderHeroGrid)
+  const heroIds = [12, 11, 13];
   const remaining = articles.filter(a => !heroIds.includes(a.id));
 
   grid.innerHTML = remaining.map((a, i) => `
     <a href="artikkel.html?id=${a.id}" class="news-card fade-in" style="transition-delay: ${i * 0.06}s">
-      <div class="news-card-image ${a.portrait ? 'portrait-img' : ''}" style="background: ${a.image && a.portrait ? `url('${a.image}') center/cover` : gradients[(a.id - 1) % gradients.length]}">
+      <div class="news-card-image" style="background-image: ${a.image ? `url('${a.image}')` : 'none'}; background-size: cover; background-position: center; background-color: ${!a.image ? gradients[(a.id - 1) % gradients.length].match(/,\s*(#\w+)\)/)?.[1] || '#1a1a2e' : 'transparent'}">
         ${a.image ? `<img src="${a.image}" alt="${a.title}">` : ''}
         <span class="category-badge">${a.category}</span>
       </div>
