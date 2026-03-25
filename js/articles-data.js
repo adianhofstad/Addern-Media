@@ -1,6 +1,53 @@
 // Shared articles data used by both index and article pages
 const articles = [
   {
+    id: 16,
+    category: 'Krim',
+    image: 'images/albin-rettssak.png',
+    portrait: true,
+    title: 'Albin Schanevius siktet for grov korrupsjon',
+    excerpt: 'Gründeren bak Schavern AI er tiltalt for å ha løyet om produkter og villedet investorer med falske salgstall.',
+    date: '25. mars 2026',
+    author: 'Addern Media',
+    body: `Albin Schanevius, grunnleggeren av teknologiselskapet Schavern AI, er formelt siktet for grov korrupsjon og bedrageri. Siktelsen kommer etter en langvarig etterforskning av Økokrim som avdekket systematisk villedning av investorer og kunder.
+
+Ifølge siktelsen skal Schanevius og selskapet Schavern AI ha løyet om produktenes kapasiteter, fabrikkert salgstall og presentert falske kundetestimonier for å tiltrekke seg investorer. Tiltalen beskriver et mønster av svindel som strekker seg over flere år.
+
+"De påståtte handlingene representerer et grovt tillitsbrudd mot investorer, kunder og det norske næringslivet," sa statsadvokaten under en pressekonferanse i dag.
+
+Etterforskningen avdekket at Schavern AI skal ha oppgitt inntekter som var opptil ti ganger høyere enn de reelle tallene i investorpresentasjoner. Produkter som ble markedsført som "banebrytende AI-løsninger" skal i realiteten ha vært enkle skript med begrenset funksjonalitet.
+
+Schanevius møtte i Oslo tingrett i dag, der han nektet straffskyld. Hans forsvarsadvokat uttalte at klienten "ser frem til å renvaske seg i retten."
+
+Saken har sendt sjokkbølger gjennom det norske tech-miljøet, der Schanevius tidligere ble ansett som en lovende gründer. Schavern AI hadde hentet inn over 200 millioner kroner i investeringer basert på det som nå beskrives som falske lovnader.
+
+Økokrim har beslaglagt dokumenter, datautstyr og finansielle records fra selskapets kontorer. Flere tidligere ansatte skal ha varslet internt om uregelmessigheter, men ble ifølge kilder presset til taushet.
+
+Rettssaken er berammet til høsten 2026. Schanevius risikerer inntil seks års fengsel dersom han blir funnet skyldig.`
+  },
+  {
+    id: 15,
+    category: 'Nyheter',
+    image: 'images/luddern-casino.png',
+    title: 'Luddern Casino brent ned til grunnen — etterforsker mulig forsikringssvindel',
+    excerpt: 'Ludvik Olavsens casino ble totalskadet i brann. Politiet undersøker om brannen ble påsatt for å kreve forsikringsutbetaling.',
+    date: '24. mars 2026',
+    author: 'Addern Media',
+    body: `Luddern Casino, eid av forretningsmannen Ludvik Olavsen, ble i natt fullstendig ødelagt i en voldsom brann. Nødetatene ble varslet klokken 02:34 og rykket ut med store styrker, men bygningen var allerede overtent da brannvesenet ankom stedet.
+
+Ingen personer ble skadet i brannen, men bygningen er totalskadet. Brannen var så intens at den var synlig flere kilometer unna, og nabobygg måtte evakueres som sikkerhetstiltak.
+
+Brannårsaken er foreløpig ukjent, og politiet har iverksatt full etterforskning. Kriminalteknikere har sikret spor fra brannstedet, og politiet opplyser at de undersøker alle mulige årsaker — inkludert om brannen kan ha blitt påsatt med vilje.
+
+"Vi etterforsker bredt og har foreløpig ikke konkludert med brannårsak. Vi undersøker blant annet om det kan foreligge et forsikringsmotiv," uttalte politiets etterforskningsleder til Addern Media.
+
+Kilder tett på etterforskningen forteller at politiet ser nærmere på casinoets økonomi i forkant av brannen. Luddern Casino skal ha hatt betydelige økonomiske utfordringer de siste månedene, med synkende besøkstall og økende gjeld.
+
+Ludvik Olavsen har ikke ønsket å kommentere saken utover å si at han er "dypt rystet" over hendelsen. Forsikringsselskapet har bekreftet at de avventer politiets konklusjoner før en eventuell utbetaling.
+
+Politiet har avhørt flere vitner og gjennomgår overvåkningsvideoer fra området. Etterforskningen pågår for fullt, og politiet utelukker ingen hypoteser på nåværende tidspunkt.`
+  },
+  {
     id: 14,
     category: 'Vitenskap',
     image: 'images/keba-cancer.png',
