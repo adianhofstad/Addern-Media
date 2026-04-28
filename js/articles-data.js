@@ -19,7 +19,7 @@ Addern Investing, som ble grunnlagt av Hofstad for under to år siden, har aller
 
 Hofstad er ikke beskjeden. Han er heller ikke ment å være det.
 
-«Jeg er 18 år gammel og har bygget et investeringsselskap som folk langt eldre enn meg drømmer om å ha. Det er ikke fordi jeg er heldig. Det er fordi jeg er dedikert, disiplinert og smart med penger. Og litt fordi jeg er meg,» sier han med et smil som antyder at han vet nøyaktig hva han driver med.
+«Jeg er 16 år gammel og har bygget et investeringsselskap som folk langt eldre enn meg drømmer om å ha. Det er ikke fordi jeg er heldig. Det er fordi jeg er dedikert, disiplinert og smart med penger. Og litt fordi jeg er meg,» sier han med et smil som antyder at han vet nøyaktig hva han driver med.
 
 Spørsmålet han alltid stiller nye klienter har blitt nesten legendarisk i kretser som følger ham på sosiale medier: «Hvor mye har du i aksjekapital?» Det er ikke ment som et snobbete spørsmål, presiserer han — det er ment som et wake-up call.
 
