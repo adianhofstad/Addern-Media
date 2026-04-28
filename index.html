@@ -91,14 +91,22 @@
     </div>
   </section>
 
-  <!-- NEWS GRID -->
+  <!-- NEWS GRID WITH SIDEBAR -->
   <div class="section-header" id="nyheter">
     <div class="red-bar"></div>
     <h2>Siste nytt</h2>
     <div class="line"></div>
   </div>
-  <div class="news-grid" id="news-grid">
-    <!-- Rendered by JS -->
+  <div class="news-layout">
+    <div class="news-grid" id="news-grid">
+      <!-- Rendered by JS -->
+    </div>
+    <aside class="sidebar">
+      <div class="sidebar-ad-label">ANNONSE</div>
+      <a href="https://adianhofstad.github.io/aksjeakademiet" target="_blank" class="sidebar-ad">
+        <img src="images/addern-investing-ad.png" alt="Addern Investing – Vil du bli rik?">
+      </a>
+    </aside>
   </div>
 
   <!-- FOOTER -->
@@ -136,6 +144,122 @@
       <span class="footer-disclaimer">Fiktiv nyhetskanal — kun for underholdningsformål</span>
     </div>
   </footer>
+
+  <!-- AD POPUP -->
+  <div class="ad-overlay" id="ad-overlay">
+    <div class="ad-popup">
+      <button class="ad-close" id="ad-close" aria-label="Lukk annonse">&#x2715;</button>
+      <a href="https://adianhofstad.github.io/aksjeakademiet" target="_blank" id="ad-link">
+        <img src="images/addern-investing-ad.png" alt="Addern Investing">
+      </a>
+    </div>
+  </div>
+
+  <style>
+    /* SIDEBAR */
+    .news-layout {
+      display: flex;
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      align-items: flex-start;
+    }
+    .news-layout .news-grid {
+      flex: 1;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar {
+      width: 280px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 80px;
+    }
+    .sidebar-ad-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #999;
+      text-align: center;
+      margin-bottom: 6px;
+      font-family: sans-serif;
+    }
+    .sidebar-ad {
+      display: block;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    .sidebar-ad:hover { transform: scale(1.02); }
+    .sidebar-ad img { width: 100%; display: block; }
+
+    /* POPUP */
+    .ad-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .ad-overlay.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .ad-popup {
+      position: relative;
+      max-width: 560px;
+      width: 90%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+      animation: popIn 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    .ad-popup img { width: 100%; display: block; }
+    .ad-close {
+      position: absolute;
+      top: 10px; right: 10px;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 34px; height: 34px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 10;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .ad-close:hover { background: #e63946; }
+
+    @media (max-width: 900px) {
+      .news-layout { flex-direction: column; }
+      .sidebar { width: 100%; position: static; }
+    }
+  </style>
+
+  <script>
+    // Show popup once per visitor
+    if (!localStorage.getItem('addern-ad-seen')) {
+      setTimeout(function() {
+        var overlay = document.getElementById('ad-overlay');
+        overlay.classList.add('visible');
+        localStorage.setItem('addern-ad-seen', '1');
+      }, 2500);
+    }
+    document.getElementById('ad-close').addEventListener('click', function() {
+      document.getElementById('ad-overlay').classList.remove('visible');
+    });
+  </script>
 
   <script src="js/articles-data.js"></script>
   <script src="js/main.js"></script>
