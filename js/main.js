@@ -76,10 +76,10 @@ function renderHeroGrid() {
   const grid = document.getElementById('hero-grid');
   if (!grid) return;
 
-  // Main hero = Albin rettssak, side heroes = Adian VM + Tavares
-  const main = articles.find(a => a.id === 16);  // Albin siktet
-  const side1 = articles.find(a => a.id === 12); // Adian dropper VM
-  const side2 = articles.find(a => a.id === 11); // Tavares Industries
+  // Main hero = Addern Aksjekongen, side heroes = Albin siktet + Adian VM
+  const main = articles.find(a => a.id === 17);  // Addern Aksjekongen
+  const side1 = articles.find(a => a.id === 16); // Albin siktet
+  const side2 = articles.find(a => a.id === 12); // Adian dropper VM
 
   function heroImageStyle(a, idx) {
     if (a.image) return `background: url('${a.image}') center/100% 100% no-repeat`;
@@ -129,7 +129,7 @@ function renderNewsCards() {
   if (!grid) return;
 
   // Skip articles shown in hero (match the IDs used in renderHeroGrid)
-  const heroIds = [16, 12, 11];
+  const heroIds = [17, 16, 12];
   const remaining = articles.filter(a => !heroIds.includes(a.id));
 
   grid.innerHTML = remaining.map((a, i) => `

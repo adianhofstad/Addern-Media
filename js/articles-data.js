@@ -1,6 +1,47 @@
 // Shared articles data used by both index and article pages
 const articles = [
   {
+    id: 17,
+    category: 'Økonomi',
+    image: 'images/addern-aksjekongen.png',
+    portrait: true,
+    title: 'Addern blir Aksjekongen: «Hvor mye har du i aksjekapital?»',
+    excerpt: 'Adian Hofstad, CEO og grunnlegger av Addern Investing, tar Norge med storm. Nå er det ingen tvil — mannen er aksjekongen.',
+    date: '28. april 2026',
+    author: 'Addern Media',
+    body: `Det finnes få mennesker i Norge som snakker om penger med den samme selvsikkerheten som Adian Hofstad. I en eksklusiv samtale med Addern Media — som han selv eier, og som han gjerne påpeker er Norges raskest voksende mediehus — la han ikke skjul på hvem han er, hva han har bygget, og hvorfor du bør lytte.
+
+«Jeg startet Addern Investing fordi jeg så at folk i dette landet ikke visste hva de gjorde med pengene sine. De satte dem i banken. I banken. I 2026,» sier Hofstad og rister på hodet, tydelig frustrert på vegne av den norske middelklassen.
+
+Addern Investing, som ble grunnlagt av Hofstad for under to år siden, har allerede hjulpet hundrevis av kunder med å bygge formue gjennom strategisk aksjehandel, porteføljeforvaltning og det Hofstad selv kaller «neste generasjons kapitalallokering.» Selskapet har vokst med over 400 prosent det siste halvåret.
+
+«Folk kommer til meg og spør om råd. Jeg sier alltid det samme: aksjekapital er makt. Hvis du ikke har aksjekapital, er du på feil side av bordet,» sier han og lener seg tilbake i den skreddersydde dressen sin, med New York-skylinjen som bakteppe.
+
+Hofstad er ikke beskjeden. Han er heller ikke ment å være det.
+
+«Jeg er 18 år gammel og har bygget et investeringsselskap som folk langt eldre enn meg drømmer om å ha. Det er ikke fordi jeg er heldig. Det er fordi jeg er dedikert, disiplinert og smart med penger. Og litt fordi jeg er meg,» sier han med et smil som antyder at han vet nøyaktig hva han driver med.
+
+Spørsmålet han alltid stiller nye klienter har blitt nesten legendarisk i kretser som følger ham på sosiale medier: «Hvor mye har du i aksjekapital?» Det er ikke ment som et snobbete spørsmål, presiserer han — det er ment som et wake-up call.
+
+«Hvis svaret ditt er null, er du i trøbbel. Ikke fordi du er fattig, men fordi du ikke har satt pengene dine i arbeid. Penger som ikke jobber, er penger som dør,» sier Hofstad.
+
+Gjennom Addern Investing tilbyr han alt fra nybegynnerkurs i aksjehandel til skreddersydde porteføljestrategier for høyformueindivider. Hans filosofi er enkel: diversifisering, tålmodighet, og å alltid vite mer enn markedet tror du gjør.
+
+Kundelistene er konfidensielle, men Hofstad lar seg friste til å antyde at «noen av de største navnene i norsk næringsliv» er blant dem som har satt pengene sine i hans hender.
+
+«Jeg kunne sagt navnene, men det ville vært uprofesjonelt. Det jeg kan si er at de er fornøyde, og at de tjener penger. Det er alt som teller,» sier han.
+
+Spurt om han noen gang tar feil, stopper Hofstad et øyeblikk. Tenker. Og svarer:
+
+«Sjelden. Og når det skjer, lærer jeg raskere enn alle andre.»
+
+Addern Investing har kontor i Sarpsborg og er i ferd med å ekspandere. Hofstad sier han har planer om å åpne kontorer i Oslo og Stockholm innen utgangen av 2026.
+
+«Norge er bare starten. Skandinavia er neste. Og etter det? Vi får se,» sier han og ser rett inn i kameraet med et blikk som ikke etterlater mye tvil.
+
+Aksjekongen har talt. Det er opp til deg å følge med.`
+  },
+  {
     id: 16,
     category: 'Krim',
     image: 'images/albin-rettssak.png',
