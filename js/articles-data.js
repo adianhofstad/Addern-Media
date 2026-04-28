@@ -1,6 +1,34 @@
 // Shared articles data used by both index and article pages
 const articles = [
   {
+    id: 18,
+    category: 'Teknologi',
+    image: 'images/tavares-plasma.png',
+    title: 'Tavares Industries ASA revolusjonerer energisektoren med plasmanoteknologi',
+    excerpt: 'Forsvarsgiganten avduker verdens første kommersielle plasma-nanoreaktorsystem — en teknologi som kan endre alt.',
+    date: '28. april 2026',
+    author: 'Addern Media',
+    body: `Tavares Industries ASA, ledet av Yure Tavares, har i dag kunngjort et gjennombrudd som eksperter allerede beskriver som «det viktigste energiskiftet siden atomkraften» — selskapet har utviklet og patentert verdens første funksjonelle plasma-nanoreaktorsystem for kommersiell bruk.
+
+Teknologien, som internt har gått under kodenavnet «Project Helios», kombinerer høytemperaturplasma med proprietær nanoteknologi for å skape en selvforsynt energikilde som produserer opptil 40 ganger mer energi enn den forbruker — uten utslipp, uten radioaktivt avfall, og uten behov for fossile brennstoff.
+
+«Vi har brukt fire år på å løse det fysikkproblemet alle sa var uløselig. I dag presenterer vi løsningen,» sa Yure Tavares på en pressekonferanse fra selskapets forskningssenter utenfor Oslo, iført militæruniform og med en rolig selvsikkerhet som preget hele rommet.
+
+Plasma-nanoreaktorsystemet fungerer ved at supraledende nanopartikler injiseres i et magnetisk innesluttet plasmasjikt, der de fungerer som katalysatorer for en kontinuerlig fusjonsreaksjon. I motsetning til tradisjonell fusjonsteknologi, som krever enorme anlegg og ekstremt høye temperaturer, er Tavares-reaktoren kompakt nok til å monteres i et standard industribygg og opererer ved temperaturer som kan kontrolleres med presisjon ned til nanoskala.
+
+«Vi snakker om en reaktor på størrelse med en lastebilcontainer som kan forsyne en by på 200 000 mennesker med ren energi — døgnet rundt, uavhengig av vær, sol eller vind,» forklarte Dr. Amara Diallo, selskapets sjefsforsker, under presentasjonen.
+
+Det norske Energidepartementet bekreftet umiddelbart etter pressekonferansen at de vil innlede forhandlinger om en nasjonal pilotavtale. NATOs generalsekretær sendte en gratulasjon og kalte teknologien «en strategisk game-changer for vestlig energiuavhengighet.»
+
+Aksjen til Tavares Industries ASA steg 340 prosent på Oslo Børs i løpet av de første 30 minuttene etter kunngjøringen — den kraftigste enkeltdagsoppgangen i Oslo Børs' historie. Handelen ble midlertidig suspendert to ganger for å hindre ukontrollert volatilitet.
+
+Yure Tavares, som de siste månedene har hatt Adian Hofstad fra Addern Investing som strategisk rådgiver, er tydelig på at dette bare er begynnelsen.
+
+«Energi er makt. Og nå kontrollerer vi begge deler,» sa Tavares og avsluttet pressekonferansen uten å ta spørsmål.
+
+Tavares Industries planlegger å ha den første kommersielle reaktoren operativ innen Q3 2026, med leveranser til forsvarsinstallasjoner i Norge, Sverige og USA. En sivil versjon er under utvikling og forventes lansert i 2027.`
+  },
+  {
     id: 17,
     category: 'Økonomi',
     image: 'images/addern-aksjekongen.png',
